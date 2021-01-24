@@ -1,0 +1,28 @@
+
+
+.intro {
+    margin-bottom: 1em;
+
+
+    h1 {
+        font-weight: 200;
+        text-align: center;
+        margin-bottom: .5em;
+
+        span {
+            font-weight: 600;
+            display: block;
+            color: $neutralDarkBlue;
+            margin-top: -.3em;
+        }
+    }
+
+    p {
+        text-align: center;
+        font-size: 1em;
+        font-weight: 400;
+        color: $neutralGrayishBlue;
+        max-width: 55ch;
+        margin: 0 auto;
+    }
+}

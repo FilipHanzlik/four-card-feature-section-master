@@ -1,0 +1,88 @@
+
+.cards {
+    width: 75%;
+    height: 70%;
+    margin-right: auto;
+    margin-left: auto;
+
+    display: grid;
+    grid-template-areas: 
+        "Supervisor TeamBuilder Calculator"
+        "Supervisor karma Calculator";
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+
+    @media (max-width: $breakPoint) {
+        grid-template-areas: "Supervisor" "TeamBuilder" "Calculator" "karma";
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+    }
+
+    .card {
+        background-color: white;
+        padding: 1em;
+        border-radius: 10px;
+        margin: .75em;
+        position: relative;
+        box-shadow: 0px 10px 20px rgba($neutralGrayishBlue, 0.75);
+
+        @media (max-width: $breakPoint) {
+            height: 25vh;
+            margin-bottom: 1em;
+            margin-top: 1em;
+        }
+
+
+        h2 {
+            font-weight: 600;
+            color: $neutralDarkBlue;
+            margin-bottom: 0;
+            margin-top: 0;
+        }
+        
+        p {
+            font-weight: 200;
+            color: $neutralGrayishBlue;
+            margin-top: 0;
+        } 
+
+        img {
+            position: absolute;
+            bottom: 1em;
+            right: 1em; 
+        }
+    }
+
+    .card-1 {
+        height: 40%;
+        @media (max-width: $breakPoint) {
+            height: 25vh;
+        }
+        margin-top: auto;
+        margin-bottom: auto;
+        grid-area: Supervisor;
+        border-top: 5px solid $primaryCyan;
+    }
+
+    .card-2 {
+        grid-area: TeamBuilder;
+        border-top: 5px solid $primaryRed;
+    }
+
+    .card-3 {
+        height: 40%;
+        @media (max-width: $breakPoint) {
+            height: 25vh;
+        }
+        margin-top: auto;
+        margin-bottom: auto;
+        grid-area: Calculator;
+        border-top: 5px solid $primaryBlue;
+    }
+
+    .card-4 {
+        grid-area: karma;
+        border-top: 5px solid $primaryOrange;
+    }
+    
+}

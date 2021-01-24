@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+$primaryRed: hsl(0, 78%, 62%);
+$primaryBlue: hsl(212, 86%, 64%);
+$primaryOrange: hsl(34, 97%, 64%);
+$primaryCyan: hsl(180, 62%, 55%);
+
+$neutralDarkBlue: hsl(234, 12%, 34%);
+$neutralGrayishBlue: hsl(229, 6%, 66%);
+$neutralLightGray: hsl(0, 0%, 98%);
+
+$breakPoint: 700px; // Break point for mobile design
+
+:root {
+    font-family: Poppins;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    padding: 1em;
+    height: 90vh;
+    @media (max-width: $breakPoint) {
+        height: max-content;
+    }
+}

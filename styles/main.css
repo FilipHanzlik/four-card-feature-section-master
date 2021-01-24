@@ -1,0 +1,157 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+:root {
+  font-family: Poppins;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  padding: 1em;
+  height: 90vh;
+}
+
+@media (max-width: 700px) {
+  body {
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+  }
+}
+
+.intro {
+  margin-bottom: 1em;
+}
+
+.intro h1 {
+  font-weight: 200;
+  text-align: center;
+  margin-bottom: .5em;
+}
+
+.intro h1 span {
+  font-weight: 600;
+  display: block;
+  color: #4c4e61;
+  margin-top: -.3em;
+}
+
+.intro p {
+  text-align: center;
+  font-size: 1em;
+  font-weight: 400;
+  color: #a3a5ae;
+  max-width: 55ch;
+  margin: 0 auto;
+}
+
+.cards {
+  width: 75%;
+  height: 70%;
+  margin-right: auto;
+  margin-left: auto;
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "Supervisor TeamBuilder Calculator" "Supervisor karma Calculator";
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+}
+
+@media (max-width: 700px) {
+  .cards {
+        grid-template-areas: "Supervisor" "TeamBuilder" "Calculator" "karma";
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+  }
+}
+
+.cards .card {
+  background-color: white;
+  padding: 1em;
+  border-radius: 10px;
+  margin: .75em;
+  position: relative;
+  -webkit-box-shadow: 0px 10px 20px rgba(163, 165, 174, 0.75);
+          box-shadow: 0px 10px 20px rgba(163, 165, 174, 0.75);
+}
+
+@media (max-width: 700px) {
+  .cards .card {
+    height: 25vh;
+    margin-bottom: 1em;
+    margin-top: 1em;
+  }
+}
+
+.cards .card h2 {
+  font-weight: 600;
+  color: #4c4e61;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.cards .card p {
+  font-weight: 200;
+  color: #a3a5ae;
+  margin-top: 0;
+}
+
+.cards .card img {
+  position: absolute;
+  bottom: 1em;
+  right: 1em;
+}
+
+.cards .card-1 {
+  height: 40%;
+  margin-top: auto;
+  margin-bottom: auto;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 1;
+  grid-area: Supervisor;
+  border-top: 5px solid #45d3d3;
+}
+
+@media (max-width: 700px) {
+  .cards .card-1 {
+    height: 25vh;
+  }
+}
+
+.cards .card-2 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: TeamBuilder;
+  border-top: 5px solid #ea5353;
+}
+
+.cards .card-3 {
+  height: 40%;
+  margin-top: auto;
+  margin-bottom: auto;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 3;
+  grid-area: Calculator;
+  border-top: 5px solid #549ef2;
+}
+
+@media (max-width: 700px) {
+  .cards .card-3 {
+    height: 25vh;
+  }
+}
+
+.cards .card-4 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: karma;
+  border-top: 5px solid #fcaf4a;
+}
+/*# sourceMappingURL=main.css.map */
